@@ -1,0 +1,8 @@
+version: '3.7'
+
+services:
+  web:
+    build: .
+    command: python3 /rate_limiter/http_server.py
+    ports:
+      - "80:80"
